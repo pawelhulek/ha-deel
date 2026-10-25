@@ -1,0 +1,12 @@
+{
+  "profile": {
+    "id": "c0000000-0000-4000-8000-000000000001",
+    "hrisProfileId": "b0000000-0000-4000-8000-000000000001",
+    "organizationId": "org",
+    "country": "PL",
+    "startDate": "2024-01-01",
+    "workerType": "CONTRACTOR",
+    "isPartTime": false,
+    "hasReachedEndDate": false
+  }
+}

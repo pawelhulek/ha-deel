@@ -1,0 +1,58 @@
+{
+  "cursor": "next-page",
+  "rows": [
+    {
+      "id": 801,
+      "invoiceId": "INV-2026-0041",
+      "label": "September 2026",
+      "status": "paid",
+      "displayStatus": {
+        "key": "paid",
+        "label": "Paid"
+      },
+      "currency": "PLN",
+      "paymentCurrency": "USD",
+      "createdAt": "2026-09-30T09:00:00.000Z",
+      "issuedAt": "2026-09-30T09:00:00.000Z",
+      "paidAt": "2026-10-04T12:00:00.000Z",
+      "amount": "17500.00",
+      "total": "17500.00",
+      "dueDate": "2026-10-05T00:00:00.000Z",
+      "isOverdue": false,
+      "rates": {
+        "risk": 0,
+        "rates": {
+          "USD": 1
+        }
+      },
+      "organization": {
+        "id": 1,
+        "name": "Acme Corp"
+      },
+      "contract": {
+        "id": "abc1234"
+      }
+    },
+    {
+      "id": 701,
+      "invoiceId": "INV-2026-0040",
+      "label": "August 2026",
+      "status": "paid",
+      "displayStatus": {
+        "key": "paid",
+        "label": "Paid"
+      },
+      "currency": "PLN",
+      "createdAt": "2026-08-31T09:00:00.000Z",
+      "issuedAt": "2026-08-31T09:00:00.000Z",
+      "paidAt": "2026-09-04T12:00:00.000Z",
+      "amount": "16000.00",
+      "total": "16000.00",
+      "isOverdue": false,
+      "organization": {
+        "id": 1,
+        "name": "Acme Corp"
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Konto Deel",
+        "description": "Zaloguj się tym samym e-mailem i hasłem co na app.deel.com. Logowanie przez Google i SSO nie jest obsługiwane.\n\nHome Assistant sam przechodzi weryfikację dwuetapową Deel, więc potrzebuje **klucza tajnego aplikacji uwierzytelniającej**, a nie 6-cyfrowego kodu. W ustawieniach bezpieczeństwa Deel skonfiguruj aplikację uwierzytelniającą od nowa i przy kodzie QR wybierz pokazanie klucza jako tekstu. Dodaj ten sam klucz także do aplikacji w telefonie. Link `otpauth://` też zadziała.",
+        "data": {
+          "email": "E-mail",
+          "password": "Hasło",
+          "totp_secret": "Klucz tajny aplikacji uwierzytelniającej"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Zaloguj się ponownie do Deel",
+        "description": "Home Assistant nie mógł zalogować się do Deel jako {email}. Uzupełnij tylko to, co się zmieniło, i naciśnij Zatwierdź. Jeśli Deel poprosił o captchę albo zablokował logowanie, najpierw zaloguj się raz na app.deel.com w przeglądarce.",
+        "data": {
+          "password": "Nowe hasło (opcjonalnie)",
+          "totp_secret": "Nowy klucz tajny (opcjonalnie)"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Nieprawidłowy e-mail lub hasło.",
+      "invalid_code": "Deel odrzucił wygenerowany kod. Sprawdź klucz tajny i czy zegar Home Assistanta jest poprawny.",
+      "invalid_secret": "To nie jest klucz tajny aplikacji uwierzytelniającej (litery A–Z i cyfry 2–7).",
+      "totp_not_enabled": "Twoja weryfikacja dwuetapowa w Deel nie korzysta z aplikacji uwierzytelniającej. Zmień to w ustawieniach bezpieczeństwa Deel.",
+      "sso_only": "To konto Deel pozwala tylko na logowanie SSO, którego Home Assistant nie obsługuje.",
+      "captcha_required": "Deel poprosił o captchę. Zaloguj się raz na app.deel.com w przeglądarce, odczekaj chwilę i spróbuj ponownie.",
+      "login_blocked": "Deel zablokował logowanie po zbyt wielu próbach. Odczekaj przed kolejną próbą.",
+      "cannot_connect": "Nie można połączyć się z app.deel.com.",
+      "unknown": "Nieoczekiwany błąd, zobacz log Home Assistanta."
+    },
+    "abort": {
+      "already_configured": "To konto Deel jest już skonfigurowane.",
+      "reauth_successful": "Zalogowano ponownie.",
+      "wrong_account": "Te dane logują do innego konta Deel."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "total_balance": { "name": "Saldo łączne" },
+      "balance": { "name": "Saldo {currency}" },
+      "last_withdrawal": { "name": "Ostatnia wypłata" },
+      "last_withdrawal_date": { "name": "Data ostatniej wypłaty" },
+      "upcoming_invoices": { "name": "Nadchodzące faktury" },
+      "next_invoice_due": { "name": "Termin następnej faktury" },
+      "next_public_holiday": { "name": "Najbliższe święto" },
+      "token_expiration": { "name": "Wygaśnięcie tokenu logowania" },
+      "time_off_used": { "name": "{policy} – wykorzystane" },
+      "contract_status": { "name": "Status" },
+      "rate": { "name": "Stawka" },
+      "cycle_end": { "name": "Koniec okresu rozliczeniowego" },
+      "last_invoice": { "name": "Ostatnia faktura" }
+    }
+  },
+  "exceptions": {
+    "invalid_auth": { "message": "Deel odrzucił e-mail lub hasło." },
+    "invalid_code": { "message": "Deel odrzucił kod z aplikacji uwierzytelniającej. Sprawdź klucz tajny i zegar Home Assistanta." },
+    "totp_not_enabled": { "message": "Weryfikacja dwuetapowa konta Deel nie korzysta z aplikacji uwierzytelniającej." },
+    "sso_only": { "message": "Konto Deel pozwala tylko na logowanie SSO." },
+    "captcha_required": { "message": "Deel poprosił o captchę, więc Home Assistant nie może się teraz zalogować." },
+    "login_blocked": { "message": "Deel zablokował logowanie po zbyt wielu próbach." }
+  }
+}

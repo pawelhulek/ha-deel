@@ -1,0 +1,64 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Deel account",
+        "description": "Log in with the e-mail and password you use on app.deel.com. Google and SSO sign-in are not supported.\n\nHome Assistant answers Deel's two-step verification itself, so it needs the **secret key of your authenticator app**, not a 6-digit code. In Deel's security settings, set up the authenticator app again and, where the QR code is shown, choose to see the key as text. Add the same key to your phone's authenticator too. An `otpauth://` link also works.",
+        "data": {
+          "email": "E-mail",
+          "password": "Password",
+          "totp_secret": "Authenticator secret key"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Log in to Deel again",
+        "description": "Home Assistant could not log in to Deel as {email}. Fill in only what changed and press Submit. If Deel asked for a captcha or locked the login, sign in once at app.deel.com in a browser first.",
+        "data": {
+          "password": "New password (optional)",
+          "totp_secret": "New authenticator secret key (optional)"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Wrong e-mail or password.",
+      "invalid_code": "Deel rejected the generated code. Check the secret key and that the Home Assistant clock is correct.",
+      "invalid_secret": "This is not an authenticator secret key (letters A–Z and digits 2–7).",
+      "totp_not_enabled": "Your Deel two-step verification is not an authenticator app. Switch it to an authenticator app in Deel's security settings.",
+      "sso_only": "This Deel account only allows single sign-on, which Home Assistant cannot use.",
+      "captcha_required": "Deel asked for a captcha. Log in once at app.deel.com in a browser, wait a while and try again.",
+      "login_blocked": "Deel blocked this login after too many attempts. Wait before trying again.",
+      "cannot_connect": "Could not reach app.deel.com.",
+      "unknown": "Unexpected error, see the Home Assistant log."
+    },
+    "abort": {
+      "already_configured": "This Deel account is already set up.",
+      "reauth_successful": "Logged in again.",
+      "wrong_account": "These details log in to a different Deel account."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "total_balance": { "name": "Total balance" },
+      "balance": { "name": "Balance {currency}" },
+      "last_withdrawal": { "name": "Last withdrawal" },
+      "last_withdrawal_date": { "name": "Last withdrawal date" },
+      "upcoming_invoices": { "name": "Upcoming invoices" },
+      "next_invoice_due": { "name": "Next invoice due" },
+      "next_public_holiday": { "name": "Next public holiday" },
+      "token_expiration": { "name": "Login token expires" },
+      "time_off_used": { "name": "{policy} used" },
+      "contract_status": { "name": "Status" },
+      "rate": { "name": "Rate" },
+      "cycle_end": { "name": "Payment cycle ends" },
+      "last_invoice": { "name": "Last invoice" }
+    }
+  },
+  "exceptions": {
+    "invalid_auth": { "message": "Deel rejected the e-mail or password." },
+    "invalid_code": { "message": "Deel rejected the authenticator code. Check the secret key and the Home Assistant clock." },
+    "totp_not_enabled": { "message": "The Deel account's two-step verification is not an authenticator app." },
+    "sso_only": { "message": "The Deel account only allows single sign-on." },
+    "captcha_required": { "message": "Deel asked for a captcha, so Home Assistant cannot log in right now." },
+    "login_blocked": { "message": "Deel blocked the login after too many attempts." }
+  }
+}

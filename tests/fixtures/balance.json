@@ -1,0 +1,12 @@
+{
+  "balancesTotal": {
+    "currency": "USD",
+    "amount": "1234.56"
+  },
+  "balances": [
+    {
+      "currency": "PLN",
+      "amount": "4500.00"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "transactions": [
+    {
+      "date": "2026-10-05T08:30:00.000Z",
+      "amount": "-8750.00",
+      "currency": "PLN",
+      "publicId": "tx-3",
+      "id": 3,
+      "itemId": "w-3",
+      "direction": "out",
+      "type": "withdrawal",
+      "status": "sent",
+      "method": "bank_transfer",
+      "destinationCurrency": "PLN",
+      "withdrawalInfo": {
+        "accountNumber": "00000000000000000000000000",
+        "name": "Test Worker",
+        "accountHolderName": "Test Worker",
+        "address": {}
+      },
+      "withdrawalReference": "REF-SECRET-3",
+      "isSwift": false
+    },
+    {
+      "date": "2026-09-05T08:30:00.000Z",
+      "amount": "-5250.00",
+      "currency": "PLN",
+      "publicId": "tx-2",
+      "id": 2,
+      "type": "withdrawal",
+      "status": "sent",
+      "method": "bank_transfer",
+      "withdrawalInfo": {
+        "accountNumber": "11111111111111111111111111"
+      }
+    },
+    {
+      "date": "2026-10-04T12:00:00.000Z",
+      "amount": "17500.00",
+      "currency": "PLN",
+      "publicId": "tx-1",
+      "id": 1,
+      "type": "payment",
+      "status": "completed"
+    }
+  ]
+}

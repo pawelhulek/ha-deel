@@ -1,0 +1,53 @@
+{
+  "entitlements": [
+    {
+      "id": "2026-01-01-p1",
+      "trackingPeriod": "2026-01-01T00:00:00Z",
+      "trackingPeriodEndDate": "2026-12-31T00:00:00Z",
+      "balanceAdjusted": "0.00",
+      "approved": "2.00",
+      "expired": "0.00",
+      "requested": "1.00",
+      "used": "5.00",
+      "Policy": {
+        "id": "p1",
+        "name": "Paid leave",
+        "trackingUnit": "YEAR",
+        "balanceTrackingType": "FLEXIBLE_NO_LIMIT",
+        "PolicyType": {
+          "name": "Paid leave"
+        }
+      },
+      "totalEntitlements": "0.00",
+      "accrualAmount": "0.00",
+      "breakdown": [],
+      "carryoverUsed": 0,
+      "allowanceUsed": 0,
+      "isAwaitingAccrual": false,
+      "displayOrder": 1
+    },
+    {
+      "id": "2026-01-01-p2",
+      "trackingPeriod": "2026-01-01T00:00:00Z",
+      "trackingPeriodEndDate": "2026-12-31T00:00:00Z",
+      "balanceAdjusted": "0.00",
+      "approved": "0.00",
+      "expired": "0.00",
+      "requested": "0.00",
+      "used": "3.50",
+      "Policy": {
+        "id": "p2",
+        "name": "Sick leave",
+        "trackingUnit": "YEAR",
+        "balanceTrackingType": "FIXED",
+        "PolicyType": {
+          "name": "Sick leave"
+        }
+      },
+      "totalEntitlements": "10.00",
+      "accrualAmount": "0.00",
+      "breakdown": [],
+      "displayOrder": 2
+    }
+  ]
+}

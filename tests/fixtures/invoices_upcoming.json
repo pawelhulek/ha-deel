@@ -1,0 +1,28 @@
+{
+  "count": 1,
+  "rows": [
+    {
+      "id": 901,
+      "invoiceId": "INV-2026-0042",
+      "status": "pending",
+      "amount": "17500.00",
+      "dueDate": "2026-11-05T00:00:00.000Z",
+      "currency": "PLN",
+      "paidAt": null,
+      "moneyReceivedAt": null,
+      "paymentProcessedAt": null,
+      "issuedAt": "2026-10-31T09:00:00.000Z",
+      "shieldShieldedStatus": "NOT_SHIELDED",
+      "clientName": "Acme Corp",
+      "isOffcycle": false,
+      "isOverdue": false,
+      "paymentFailedAt": null,
+      "isPaymentReversed": false,
+      "delayedAt": null,
+      "contract": {
+        "id": "abc1234"
+      },
+      "paymentCycles": []
+    }
+  ]
+}

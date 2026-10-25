@@ -1,0 +1,50 @@
+{
+  "count": 2,
+  "rows": [
+    {
+      "id": "abc1234",
+      "oid": "abc1234",
+      "name": "Test Worker",
+      "contractType": "ongoing_time_based",
+      "status": "in_progress",
+      "rate": 17500,
+      "cycleScale": "monthly",
+      "scale": "monthly",
+      "jobTitleName": "Software Engineer",
+      "completionPlainDate": null,
+      "activePaymentCycle": {
+        "startPlainDate": "2026-10-01",
+        "endPlainDate": "2026-10-31"
+      },
+      "organization": {
+        "id": 1,
+        "logoUrl": "",
+        "name": "Acme Corp"
+      },
+      "total": 17500,
+      "currency": "PLN",
+      "isEdited": false,
+      "isArchived": false
+    },
+    {
+      "id": "old9876",
+      "oid": "old9876",
+      "name": "Test Worker",
+      "contractType": "pay_as_you_go_time_based",
+      "status": "completed",
+      "rate": 120,
+      "cycleScale": "monthly",
+      "scale": "hourly",
+      "jobTitleName": "Consultant",
+      "completionPlainDate": "2025-06-30",
+      "activePaymentCycle": null,
+      "organization": {
+        "id": 2,
+        "name": "Old Client"
+      },
+      "total": 0,
+      "currency": "EUR",
+      "isArchived": true
+    }
+  ]
+}

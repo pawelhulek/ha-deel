@@ -1,0 +1,15 @@
+{
+  "id": "a0000000-0000-4000-8000-000000000001",
+  "profilePublicId": "a0000000-0000-4000-8000-000000000002",
+  "email": "worker@example.com",
+  "name": "Test Worker",
+  "preferredName": "Test Worker",
+  "displayName": "Test Worker",
+  "profileType": "contractor",
+  "country": "PL",
+  "hris": {
+    "id": "b0000000-0000-4000-8000-000000000001",
+    "oid": "hris-oid",
+    "displayName": "Test Worker"
+  }
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Past day",
+    "description": "",
+    "date": "2026-10-20T00:00:00.000Z",
+    "formattedDate": "2026-10-20",
+    "source": "",
+    "isMandatory": true,
+    "isEveryYear": true,
+    "createdByProfileId": null,
+    "type": "HOLIDAY",
+    "country": "PL",
+    "states": [],
+    "nameVariations": []
+  },
+  {
+    "name": "Christmas Eve",
+    "description": "",
+    "date": "2026-12-24T00:00:00.000Z",
+    "formattedDate": "2026-12-24",
+    "source": "",
+    "isMandatory": true,
+    "isEveryYear": true,
+    "createdByProfileId": null,
+    "type": "HOLIDAY",
+    "country": "PL",
+    "states": [],
+    "nameVariations": []
+  },
+  {
+    "name": "All Saints' Day",
+    "description": "",
+    "date": "2026-11-01T00:00:00.000Z",
+    "formattedDate": "2026-11-01",
+    "source": "",
+    "isMandatory": true,
+    "isEveryYear": true,
+    "createdByProfileId": null,
+    "type": "HOLIDAY",
+    "country": "PL",
+    "states": [],
+    "nameVariations": []
+  },
+  {
+    "name": "Independence Day",
+    "description": "",
+    "date": "2026-11-11T00:00:00.000Z",
+    "formattedDate": "2026-11-11",
+    "source": "",
+    "isMandatory": true,
+    "isEveryYear": true,
+    "createdByProfileId": null,
+    "type": "HOLIDAY",
+    "country": "PL",
+    "states": [],
+    "nameVariations": []
+  }
+]
